@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
+    /* Obsidian and silver chessboard */
+    background-color: #171717;
+    background-image:
+        conic-gradient(
+            #a8a8a8 25%,
+            #171717 0 50%,
+            #a8a8a8 0 75%,
+            #171717 0
+        );
+
+    background-size: 80px 80px;
+
+    font-family: 'Inter', sans-serif;
+    color: #f5f5f5;
+}
+
+/* Main counter wrapper */
+
+.counter-card {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+
+    padding: 42px 30px;
+    text-align: center;
+
+    background: #202020;
+    border: 2px solid #777777;
+    border-radius: 16px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.65),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Heading */
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #ff922b;
+
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #bdbdbd;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Counter */
+
+h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 76px;
+    font-weight: 800;
+    color: #ffffff;
+
+    margin: 12px 0 28px;
+}
+
+/* Buttons */
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #ffad60;
+    border-radius: 8px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    color: #201307;
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #ffb347,
+        #ff7518,
+        #e85d04
+    );
+
+    box-shadow: 0 4px 0 #9c3d00;
+
+    transition: transform 0.15s ease,
+                box-shadow 0.15s ease,
+                filter 0.15s ease;
+}
+
+button:hover {
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #9c3d00;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #9c3d00;
+}
+
+/* Previous entries */
+
+#save-el {
+    margin-top: 30px;
+    padding-top: 18px;
+
+    border-top: 1px solid #555555;
+
+    color: #d0d0d0;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 500;
+
+    overflow-wrap: anywhere;
+}
+
+/* Small screens */
+
+@media (max-width: 480px) {
+    .counter-card {
+        padding: 32px 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+}
