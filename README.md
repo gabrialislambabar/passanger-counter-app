@@ -30,13 +30,13 @@ A minimal counter application with an obsidian-and-silver chessboard background 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/gabrialislambabar/passanger-counter-app
 ```
 
 ### 2. Navigate to the project directory
 
 ```bash
-cd YOUR_PROJECT_FOLDER
+cd <YOUR_PROJECT_FOLDER>
 ```
 
 ### 3. Run the application
